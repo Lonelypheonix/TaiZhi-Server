@@ -1,0 +1,933 @@
+2024-11-28 01:11:41 INFO: Server will run on IP: 0.0.0.0
+2024-11-28 01:11:41 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.18:5000
+2024-11-28 01:11:41 INFO: [33mPress CTRL+C to quit[0m
+2024-11-28 01:11:41 INFO:  * Restarting with stat
+2024-11-28 01:11:46 INFO: Server will run on IP: 0.0.0.0
+2024-11-28 01:11:46 WARNING:  * Debugger is active!
+2024-11-28 01:11:46 INFO:  * Debugger PIN: 137-890-720
+2024-11-28 01:11:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:53] "GET / HTTP/1.1" 200 -
+2024-11-28 01:11:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:53] "GET /static/assets/logo.png HTTP/1.1" 200 -
+2024-11-28 01:11:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:53] "GET /static/assets/safe.png HTTP/1.1" 200 -
+2024-11-28 01:11:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:53] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-28 01:11:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:53] "GET /static/assets/circus.png HTTP/1.1" 200 -
+2024-11-28 01:11:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:53] "GET /static/assets/submarine.png HTTP/1.1" 200 -
+2024-11-28 01:11:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:53] "GET /static/assets/cabin.png HTTP/1.1" 200 -
+2024-11-28 01:11:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:53] "GET /static/assets/cake.png HTTP/1.1" 200 -
+2024-11-28 01:11:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:53] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-11-28 01:11:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:53] "GET /static/assets/game.png HTTP/1.1" 200 -
+2024-11-28 01:11:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:53] "GET /static/assets/favicon.ico HTTP/1.1" 200 -
+2024-11-28 01:11:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:53] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:11:56 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:56] "GET /upload HTTP/1.1" 200 -
+2024-11-28 01:11:56 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:11:56 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:56] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:11:56 INFO: 127.0.0.1 - - [28/Nov/2024 01:11:56] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:12:05 INFO: Files uploaded: 20241128011205_20241120154511_Plant_1_Generation_Data.csv, 20241128011205_20241120154511_Plant_1_Weather_Sensor_Data.csv
+2024-11-28 01:12:06 INFO: File processing completed successfully.
+2024-11-28 01:12:06 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:06] "POST /upload HTTP/1.1" 200 -
+2024-11-28 01:12:06 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:12:06 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:06] "[33mGET /static/plots/ae_loss.png HTTP/1.1[0m" 404 -
+2024-11-28 01:12:06 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:06] "[33mGET /static/plots/mlp_loss.png HTTP/1.1[0m" 404 -
+2024-11-28 01:12:06 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:06] "GET /static/plots/error_distribution.png HTTP/1.1" 200 -
+2024-11-28 01:12:06 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:06] "GET /static/plots/error_timeseries.png HTTP/1.1" 200 -
+2024-11-28 01:12:06 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:06] "GET /static/plots/anomalies.png HTTP/1.1" 200 -
+2024-11-28 01:12:06 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:06] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:12:06 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:06] "GET /static/plots/real_vs_pred.png HTTP/1.1" 200 -
+2024-11-28 01:12:06 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:06] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:12:14 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:14] "GET / HTTP/1.1" 200 -
+2024-11-28 01:12:14 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:12:14 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:14] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 01:12:14 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:14] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 01:12:15 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:15] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 01:12:15 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:15] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:12:15 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:15] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 01:12:15 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:15] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 01:12:15 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:15] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 01:12:15 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:15] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 01:12:15 INFO: 127.0.0.1 - - [28/Nov/2024 01:12:15] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:15:13 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:13] "GET /upload HTTP/1.1" 200 -
+2024-11-28 01:15:13 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:15:13 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:13] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:15:13 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:13] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:15:15 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:15] "GET /upload HTTP/1.1" 200 -
+2024-11-28 01:15:15 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:15:15 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:15] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:15:15 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:15] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:15:15 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:15] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:15:22 INFO: Files uploaded: 20241128011522_20241120154511_Plant_1_Generation_Data.csv, 20241128011522_20241120154511_Plant_1_Weather_Sensor_Data.csv
+2024-11-28 01:15:23 INFO: File processing completed successfully.
+2024-11-28 01:15:23 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:23] "POST /upload HTTP/1.1" 200 -
+2024-11-28 01:15:23 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:15:23 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:23] "[33mGET /static/plots/ae_loss.png HTTP/1.1[0m" 404 -
+2024-11-28 01:15:23 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:23] "[33mGET /static/plots/mlp_loss.png HTTP/1.1[0m" 404 -
+2024-11-28 01:15:23 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:23] "GET /static/plots/error_distribution.png HTTP/1.1" 200 -
+2024-11-28 01:15:23 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:23] "GET /static/plots/error_timeseries.png HTTP/1.1" 200 -
+2024-11-28 01:15:23 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:23] "GET /static/plots/anomalies.png HTTP/1.1" 200 -
+2024-11-28 01:15:23 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:23] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:15:23 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:23] "GET /static/plots/real_vs_pred.png HTTP/1.1" 200 -
+2024-11-28 01:15:23 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:23] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:15:49 INFO: Files uploaded: 20241128011549_20241120154511_Plant_1_Generation_Data.csv, 20241128011549_20241120154511_Plant_1_Weather_Sensor_Data.csv
+2024-11-28 01:15:50 INFO: File processing completed successfully.
+2024-11-28 01:15:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:50] "POST /upload HTTP/1.1" 200 -
+2024-11-28 01:15:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:15:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:50] "GET /static/plots/ae_loss.png HTTP/1.1" 200 -
+2024-11-28 01:15:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:50] "GET /static/plots/mlp_loss.png HTTP/1.1" 200 -
+2024-11-28 01:15:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:50] "GET /static/plots/error_distribution.png HTTP/1.1" 200 -
+2024-11-28 01:15:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:50] "GET /static/plots/error_timeseries.png HTTP/1.1" 200 -
+2024-11-28 01:15:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:50] "GET /static/plots/anomalies.png HTTP/1.1" 200 -
+2024-11-28 01:15:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:50] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:15:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:50] "GET /static/plots/real_vs_pred.png HTTP/1.1" 200 -
+2024-11-28 01:15:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:50] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:15:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:50] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:15:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:53] "GET / HTTP/1.1" 200 -
+2024-11-28 01:15:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:15:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:53] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 01:15:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:53] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 01:15:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:53] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 01:15:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:53] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 01:15:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:53] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 01:15:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:53] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:15:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:53] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 01:15:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:53] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 01:15:53 INFO: 127.0.0.1 - - [28/Nov/2024 01:15:53] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:16:01 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:01] "GET /test_model HTTP/1.1" 200 -
+2024-11-28 01:16:01 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:16:01 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:01] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:16:01 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:01] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:16:03 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:03] "GET /test_model HTTP/1.1" 200 -
+2024-11-28 01:16:03 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:16:03 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:03] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:16:03 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:03] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:16:03 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:03] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:16:13 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:13] "POST /test_model HTTP/1.1" 200 -
+2024-11-28 01:16:13 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:16:13 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:13] "GET /static/plots/Yeild_test_results.png HTTP/1.1" 200 -
+2024-11-28 01:16:13 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:13] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:16:13 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:13] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:16:17 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:17] "GET / HTTP/1.1" 200 -
+2024-11-28 01:16:17 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:16:17 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:17] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 01:16:17 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:17] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 01:16:17 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:17] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 01:16:17 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:17] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 01:16:17 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:17] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:16:17 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:17] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 01:16:17 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:17] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 01:16:17 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:17] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 01:16:17 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:17] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:16:18 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:18] "GET /camera HTTP/1.1" 200 -
+2024-11-28 01:16:19 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:16:19 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:19] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:16:19 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:19] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:16:29 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:29] "POST /camera HTTP/1.1" 200 -
+2024-11-28 01:16:31 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:31] "POST /camera HTTP/1.1" 200 -
+2024-11-28 01:16:33 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:33] "POST /camera HTTP/1.1" 200 -
+2024-11-28 01:16:35 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:35] "POST /camera HTTP/1.1" 200 -
+2024-11-28 01:16:39 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:39] "[31m[1mPOST /test_anomaly HTTP/1.1[0m" 400 -
+2024-11-28 01:16:48 INFO: 127.0.0.1 - - [28/Nov/2024 01:16:48] "[31m[1mPOST /test_anomaly HTTP/1.1[0m" 400 -
+2024-11-28 01:17:28 INFO:  * Detected change in 'C:\\MAster sem1\\Ai module\\flask framework\\server\\app.py', reloading
+2024-11-28 01:17:29 INFO:  * Restarting with stat
+2024-11-28 01:17:36 INFO: Server will run on IP: 0.0.0.0
+2024-11-28 01:17:36 WARNING:  * Debugger is active!
+2024-11-28 01:17:36 INFO:  * Debugger PIN: 137-890-720
+2024-11-28 01:17:44 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:44] "POST /test_anomaly HTTP/1.1" 200 -
+2024-11-28 01:17:44 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:44] "GET /static/images/20241128011633.png HTTP/1.1" 200 -
+2024-11-28 01:17:44 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:44] "GET /static/images/20241128011631.png HTTP/1.1" 200 -
+2024-11-28 01:17:44 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:44] "GET /static/images/20241128011629.png HTTP/1.1" 200 -
+2024-11-28 01:17:44 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:17:44 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:44] "GET /static/images/20241128011635.png HTTP/1.1" 200 -
+2024-11-28 01:17:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:50] "GET / HTTP/1.1" 200 -
+2024-11-28 01:17:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:17:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:50] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 01:17:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:50] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 01:17:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:50] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 01:17:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:50] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 01:17:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:50] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 01:17:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:50] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 01:17:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:50] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:17:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:50] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 01:17:50 INFO: 127.0.0.1 - - [28/Nov/2024 01:17:50] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:36:00 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:00] "GET /upload HTTP/1.1" 200 -
+2024-11-28 01:36:00 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:36:00 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:36:00 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:00] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:36:01 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:01] "GET / HTTP/1.1" 200 -
+2024-11-28 01:36:02 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:36:02 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:02] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 01:36:02 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:02] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 01:36:02 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:02] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 01:36:02 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:02] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 01:36:02 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:02] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 01:36:02 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:02] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:36:02 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:02] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 01:36:02 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:02] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 01:36:02 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:02] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:36:03 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:03] "GET /test_model HTTP/1.1" 200 -
+2024-11-28 01:36:03 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:36:03 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:03] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:36:03 INFO: 127.0.0.1 - - [28/Nov/2024 01:36:03] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:45:45 INFO: 127.0.0.1 - - [28/Nov/2024 01:45:45] "GET / HTTP/1.1" 200 -
+2024-11-28 01:45:45 INFO: 127.0.0.1 - - [28/Nov/2024 01:45:45] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 01:45:45 INFO: 127.0.0.1 - - [28/Nov/2024 01:45:45] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 01:45:45 INFO: 127.0.0.1 - - [28/Nov/2024 01:45:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:45:46 INFO: 127.0.0.1 - - [28/Nov/2024 01:45:46] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 01:45:46 INFO: 127.0.0.1 - - [28/Nov/2024 01:45:46] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 01:45:46 INFO: 127.0.0.1 - - [28/Nov/2024 01:45:46] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 01:45:46 INFO: 127.0.0.1 - - [28/Nov/2024 01:45:46] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:45:46 INFO: 127.0.0.1 - - [28/Nov/2024 01:45:46] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 01:45:46 INFO: 127.0.0.1 - - [28/Nov/2024 01:45:46] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 01:45:46 INFO: 127.0.0.1 - - [28/Nov/2024 01:45:46] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:48:19 INFO: 127.0.0.1 - - [28/Nov/2024 01:48:19] "GET /test_model HTTP/1.1" 200 -
+2024-11-28 01:48:19 INFO: 127.0.0.1 - - [28/Nov/2024 01:48:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:48:19 INFO: 127.0.0.1 - - [28/Nov/2024 01:48:19] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:48:19 INFO: 127.0.0.1 - - [28/Nov/2024 01:48:19] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 01:48:29 INFO: 127.0.0.1 - - [28/Nov/2024 01:48:29] "POST /test_model HTTP/1.1" 200 -
+2024-11-28 01:48:29 INFO: 127.0.0.1 - - [28/Nov/2024 01:48:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 01:48:29 INFO: 127.0.0.1 - - [28/Nov/2024 01:48:29] "GET /static/plots/Yeild_test_results.png HTTP/1.1" 200 -
+2024-11-28 01:48:29 INFO: 127.0.0.1 - - [28/Nov/2024 01:48:29] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 01:48:29 INFO: 127.0.0.1 - - [28/Nov/2024 01:48:29] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 02:32:46 INFO:  * Detected change in 'C:\\MAster sem1\\Ai module\\flask framework\\server\\app.py', reloading
+2024-11-28 02:32:47 INFO:  * Restarting with stat
+2024-11-28 02:32:57 INFO: Server will run on IP: 0.0.0.0
+2024-11-28 02:32:57 WARNING:  * Debugger is active!
+2024-11-28 02:32:57 INFO:  * Debugger PIN: 137-890-720
+2024-11-28 02:33:04 INFO: Server will run on IP: 0.0.0.0
+2024-11-28 02:33:04 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.18:5000
+2024-11-28 02:33:04 INFO: [33mPress CTRL+C to quit[0m
+2024-11-28 02:33:04 INFO:  * Restarting with stat
+2024-11-28 02:33:09 INFO: Server will run on IP: 0.0.0.0
+2024-11-28 02:33:09 WARNING:  * Debugger is active!
+2024-11-28 02:33:09 INFO:  * Debugger PIN: 137-890-720
+2024-11-28 02:36:38 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:38] "GET / HTTP/1.1" 200 -
+2024-11-28 02:36:38 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:38] "GET /static/assets/logo.png HTTP/1.1" 200 -
+2024-11-28 02:36:38 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:38] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-28 02:36:38 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:38] "GET /static/assets/safe.png HTTP/1.1" 200 -
+2024-11-28 02:36:38 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:38] "GET /static/assets/submarine.png HTTP/1.1" 200 -
+2024-11-28 02:36:39 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:39] "GET /static/assets/circus.png HTTP/1.1" 200 -
+2024-11-28 02:36:39 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:39] "GET /static/assets/cabin.png HTTP/1.1" 200 -
+2024-11-28 02:36:39 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:39] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-11-28 02:36:39 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:39] "GET /static/assets/cake.png HTTP/1.1" 200 -
+2024-11-28 02:36:39 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:39] "GET /static/assets/game.png HTTP/1.1" 200 -
+2024-11-28 02:36:39 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:39] "GET /static/assets/favicon.ico HTTP/1.1" 200 -
+2024-11-28 02:36:44 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:44] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:36:44 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:36:44 INFO: 192.168.2.21 - - [28/Nov/2024 02:36:44] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:37:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:24] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:37:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:37:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:24] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:37:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:24] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 02:37:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:25] "GET / HTTP/1.1" 200 -
+2024-11-28 02:37:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:37:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:25] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 02:37:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:25] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 02:37:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:25] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 02:37:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:25] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 02:37:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:25] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 02:37:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:25] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:37:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:25] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 02:37:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:37:25] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 02:38:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:25] "GET / HTTP/1.1" 200 -
+2024-11-28 02:38:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:38:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:25] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 02:38:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:25] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 02:38:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:25] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:38:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:25] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 02:38:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:25] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 02:38:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:25] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 02:38:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:25] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 02:38:25 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:25] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 02:38:26 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:26] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 02:38:53 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:53] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:38:53 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:38:53 INFO: 192.168.2.21 - - [28/Nov/2024 02:38:53] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:39:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:24] "GET / HTTP/1.1" 200 -
+2024-11-28 02:39:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:39:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:24] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:24] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:24] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:39:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:24] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:24] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:24] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:24] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:24] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:24 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:24] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 02:39:26 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:26] "GET / HTTP/1.1" 200 -
+2024-11-28 02:39:26 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:39:26 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:26] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:26 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:26] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:26 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:26] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:26 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:26] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:26 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:26] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:26 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:26] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:39:26 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:26] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:26 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:26] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 02:39:26 INFO: 192.168.2.21 - - [28/Nov/2024 02:39:26] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 02:41:31 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:31] "GET / HTTP/1.1" 200 -
+2024-11-28 02:41:31 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:31] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-28 02:41:31 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:31] "GET /static/assets/logo.png HTTP/1.1" 200 -
+2024-11-28 02:41:31 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:31] "GET /static/assets/safe.png HTTP/1.1" 200 -
+2024-11-28 02:41:31 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:31] "GET /static/assets/submarine.png HTTP/1.1" 200 -
+2024-11-28 02:41:31 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:31] "GET /static/assets/circus.png HTTP/1.1" 200 -
+2024-11-28 02:41:31 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:31] "GET /static/assets/cabin.png HTTP/1.1" 200 -
+2024-11-28 02:41:31 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:31] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-11-28 02:41:31 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:31] "GET /static/assets/cake.png HTTP/1.1" 200 -
+2024-11-28 02:41:31 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:31] "GET /static/assets/game.png HTTP/1.1" 200 -
+2024-11-28 02:41:31 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:31] "GET /static/assets/favicon.ico HTTP/1.1" 200 -
+2024-11-28 02:41:39 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:39] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:41:39 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:41:39 INFO: 192.168.2.12 - - [28/Nov/2024 02:41:39] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:44:45 INFO: 192.168.2.12 - - [28/Nov/2024 02:44:45] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:44:45 INFO: 192.168.2.12 - - [28/Nov/2024 02:44:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:44:45 INFO: 192.168.2.12 - - [28/Nov/2024 02:44:45] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:44:45 INFO: 192.168.2.12 - - [28/Nov/2024 02:44:45] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 02:47:22 INFO: 192.168.2.12 - - [28/Nov/2024 02:47:22] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:47:22 INFO: 192.168.2.12 - - [28/Nov/2024 02:47:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:47:22 INFO: 192.168.2.12 - - [28/Nov/2024 02:47:22] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:47:22 INFO: 192.168.2.12 - - [28/Nov/2024 02:47:22] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 02:47:23 INFO: 192.168.2.12 - - [28/Nov/2024 02:47:23] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:47:23 INFO: 192.168.2.12 - - [28/Nov/2024 02:47:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:47:23 INFO: 192.168.2.12 - - [28/Nov/2024 02:47:23] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:47:23 INFO: 192.168.2.12 - - [28/Nov/2024 02:47:23] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 02:50:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:13] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:50:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:50:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:13] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:50:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:13] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 02:50:52 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:52] "GET / HTTP/1.1" 200 -
+2024-11-28 02:50:52 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:50:52 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:52] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 02:50:52 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:52] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 02:50:52 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:52] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 02:50:52 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:52] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 02:50:52 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:52] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 02:50:52 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:52] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:50:52 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:52] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 02:50:52 INFO: 192.168.2.12 - - [28/Nov/2024 02:50:52] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 02:51:01 INFO: 192.168.2.12 - - [28/Nov/2024 02:51:01] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:51:01 INFO: 192.168.2.12 - - [28/Nov/2024 02:51:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:51:01 INFO: 192.168.2.12 - - [28/Nov/2024 02:51:01] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:51:25 INFO: 192.168.2.12 - - [28/Nov/2024 02:51:25] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:51:25 INFO: 192.168.2.12 - - [28/Nov/2024 02:51:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:51:25 INFO: 192.168.2.12 - - [28/Nov/2024 02:51:25] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:51:25 INFO: 192.168.2.12 - - [28/Nov/2024 02:51:25] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 02:51:26 INFO: 192.168.2.12 - - [28/Nov/2024 02:51:26] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:51:26 INFO: 192.168.2.12 - - [28/Nov/2024 02:51:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:51:26 INFO: 192.168.2.12 - - [28/Nov/2024 02:51:26] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:51:26 INFO: 192.168.2.12 - - [28/Nov/2024 02:51:26] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 02:52:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:13] "GET / HTTP/1.1" 200 -
+2024-11-28 02:52:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:13] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-28 02:52:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:13] "GET /static/assets/logo.png HTTP/1.1" 200 -
+2024-11-28 02:52:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:13] "GET /static/assets/safe.png HTTP/1.1" 200 -
+2024-11-28 02:52:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:13] "GET /static/assets/submarine.png HTTP/1.1" 200 -
+2024-11-28 02:52:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:13] "GET /static/assets/circus.png HTTP/1.1" 200 -
+2024-11-28 02:52:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:13] "GET /static/assets/cabin.png HTTP/1.1" 200 -
+2024-11-28 02:52:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:13] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-11-28 02:52:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:13] "GET /static/assets/cake.png HTTP/1.1" 200 -
+2024-11-28 02:52:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:13] "GET /static/assets/game.png HTTP/1.1" 200 -
+2024-11-28 02:52:13 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:13] "GET /static/assets/favicon.ico HTTP/1.1" 200 -
+2024-11-28 02:52:32 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:32] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:52:32 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:52:32 INFO: 192.168.2.12 - - [28/Nov/2024 02:52:32] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:54:46 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:46] code 400, message Bad request version ('\xfeN')
+2024-11-28 02:54:46 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:46] "[31m[1m\x16\x03\x01\x06\xc0\x01\x00\x06\xbc\x03\x03¢Ff\xb3\x13\xbb+ \x95\x09e\xce*H\xe8C\xdcH6\xa0B\x95\x9c\xef\xe4\xde\x1dX\x19\x8a\x1cW\x85 E\xd5\xc0m_0_\xce \x92\xee\x07$Z¡Ó¡Ñ0\xc1\xd8K48C\xcbR\xfb\x950\x0d\xfd^\x92\x00 ZZ\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SJJ\x00\x00\xfe\x0d\x00\xda\x00\x00\x01\x00\x01\x87\x00 _v\x94\xd9 #\x09\xee^\x89(\xcf\xf9d\xc804\x8eR\xc3\xb2\x9e$5\x08b\xef\x89\xe3\xd3\x84;\x00¢X8dUn\x8d\x0e\xae\xe8\xc1\xae\x1b\xbc\x83Fda\x00\xc2\xd4\xac6\xad\xea\xbd\xc0\xce\x81\xc5}\x86\xa1e¡P\xde\x00\x07\xa8\xe2\xb2<\xa8\x17\xeb\xc4\xc5\xdf\x01\xa6\x80\x1a\x0c1D¡PEG\x89\x85\xe3\x14|\x14-\xf1\x91¢F\x8d> ¡Â\xe4\x14\x9e\xbc\xd4\xe4\x11\xf3\xf2]\x0e\xf4\xd2\xb5\x06{\xb9\xa9\xc7\xbd\xebp\x9e=2¢X\x18E[U\xae\x13\xc8^;[oJ]¡Ñ~\xf5@\x16wUo9KS\x03\xab=J\xc7b\x1d\xfeN[0m" 400 -
+2024-11-28 02:54:46 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:46] code 400, message Bad request version ('¢F¢D\x8f?e\xec\xc2mw\x8bjv\x03:\x16j\xdb\x02\x84P\xf5\xab\x10\xf5\xf3')
+2024-11-28 02:54:46 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:46] "[31m[1m\x16\x03\x01\x06\xe0\x01\x00\x06\xdc\x03\x03\x9b\xc3\xa1\xa6\x84\xc8\xd6ci\xb3\xd6\x93Q\x9f\xb5\x80\xccUq\x05¢D\x97\xfbJx2\x91\x8a'\x0c\xd2v ¢F¢D\x8f?e\xec\xc2mw\x8bjv\x03:\x16j\xdb\x02\x84P\xf5\xab\x10\xf5\xf3\x1d[0m" 400 -
+2024-11-28 02:54:46 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:46] code 400, message Bad request version ("z\xf9%\x99\xbd¡P+5\x81\x81q\xc3\xb4'\x9c")
+2024-11-28 02:54:46 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:46] "[31m[1m\x16\x03\x01\x06\xa0\x01\x00\x06\x9c\x03\x03\xa8\xd0¡Ò\x16\xdf|R\xe28\x07\xe2l\xdf\xd4>&@P":\xf3w\xa6\xe4\x03\xe1\x17e\x9d\xe3\xefY \xf3P\xc2\xdci\xc8\xfc\xed\x8a|\xe5\xe0\xde\x11d"\xc7\xb5\xe0\xc1p\xf3\x07\xb3\x14\xc1\xfb;\x94\xb8\xb4\xfb\x00 \xea\xea\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\xca\xca\x00\x00\x00+\x00\x07\x06::\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x0b\x00\x02\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x17\x00\x00\x003\x04\xef\x04\xed\xca\xca\x00\x01\x00\x11\xec\x04\xc0\xd8{ \x87\x90\x1fC\xac\x9fv\xfa\x1f\x1e\x81U\xf9\x12z\x87\xaa\xb8\x8dW\x81\xba\x91M\xe9Zt\x1f\xfa}\x8d\x80\xac\xb5bBr`\xa6\xb6\xe9\x11}\xe2\x15z\xecv\xcb*\xc2\xde7\xc4\x06\xe0\x9b\xb6W\x87Xp\x13\xef\x04^\xd5\xda\x19h'T*\xc63\x86\x9aW\xa1\x86\x86?\x02\xa4\xe0\xdb\x14\x8e\xb5\xa4\x8e\xb6]nY0\x9e\xe1\xac¡Ò\xd5\xc9\x86\x92\x15t\x18>\x95<7\xe5[?*\xc3 \xe0\xd5yN:\xcd+\xd9\x06\x92\xf0\x0bz\x91\xb3¡Ñ¢G¡PM\xa0z\xf9%\x99\xbd¡P+5\x81\x81q\xc3\xb4'\x9c[0m" 400 -
+2024-11-28 02:54:46 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:46] code 400, message Bad request version ('\x99wfvTP\x82\xdcYUV\xb8\x89\x91¢G\xd5\xb6\xac\xaa\xab\x87\x9a\xf9¢Gb\xb9\x17\x81LZ\xf1\xb2\xa4\xb4\xf3k\xb9%(\xfa\x84')
+2024-11-28 02:54:46 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:46] "[31m[1m\x16\x03\x01\x06\xc0\x01\x00\x06\xbc\x03\x03\xfev\xa1\xc8\xbaO\x9de\xd9\xbfW\xd9\xf2\x02\x18\x8f¡P\xcfhu]Eg¡Âh\x10¡Ó\x00\xe3\x98\xdb. ¢Fy\x84\xdb\xbb\x91I\x91Ydb\x85¡Ñj\x03\x9a\xb9\xfa\x0f\xa4$yu\xb3\x18CwW\x0c\x9a\x7f\x86\x00 **\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x9a\x9a\x00\x00\x00\x1b\x00\x03\x02\x00\x02\xff\x01\x00\x01\x00\x00\x0b\x00\x02\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00-\x00\x02\x01\x01\x003\x04\xef\x04\xed\xfa\xfa\x00\x01\x00\x11\xec\x04\xc0^bo\xb6|\xa4\x04\xfb\x8e\x1b\x93\x1e4\x89U9\xf3-\x97¢G\xbdP\xe4\x1f\x93\xa68\xd1\x1b7\xa0r\x01ub\x10\x88HS\x06L\xbdG\xca/C\x13z5\xa8\xc5\xecB\x82¢F0i}\x09<\xae\x08=\xda\xc2\x1dLk\xcd\x99\x19w\x97\x1a\x1eu\x91\x03\xfeg\xae\x98\xaa\x15\xb9¡Ñ\x0d\xb3\xc8\x1b{\x9c'\xd4\xa1fb\x83\x9f\xbc\x09y\xe418\xfb\x05R\xefE}\xd4\xe2\x1c\x90\xdb\x7fA!KG\x81*\x1fH\xc6¡±\xd5\xcc0\x0b\xc2\x8dK\xb9$C<\xdb\xd9]!\x83\xc5S¢F.\xcc\xc8\x84\x138|\x07\xc3oB\xf0k@J\x10\x06\xec\x80>\xb9a\xc5\x08\x9a¡ÂiD\xe8\x9bCK\xf4~¡P[x\x11¡Ò\xc0a,\x81P\x0b\xc0\x9b\x98\xad\xe9\xe9X~\x8b\xb4rY\xc9`x\xa0¡P\x99'\x91r¢G\xf3\x86\xc3'1\xca\x1706dP\x1d\x99wfvTP\x82\xdcYUV\xb8\x89\x91¢G\xd5\xb6\xac\xaa\xab\x87\x9a\xf9¢Gb\xb9\x17\x81LZ\xf1\xb2\xa4\xb4\xf3k\xb9%(\xfa\x84[0m" 400 -
+2024-11-28 02:54:48 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:48] code 400, message Bad request version ('\x99MZ\x97\xcan\xca\x08\xb2\xfcd\xd2\x84\x86\x8bg\xa48\xb4#\xdd8\xad\x90&\xb6`\x08~\x92\x03\x9a/=-M\xed\xc1%')
+2024-11-28 02:54:48 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:48] "[31m[1m\x16\x03\x01\x06\xa0\x01\x00\x06\x9c\x03\x03\xeb,\x8c\xc3\x9a>\xdb@K\xf9\x06\x01a\x80\x8dQX\xa9\x03\xbchD\xbf\xd8\x1b\x0c;K\xe9\x94\x7f¡P \xca\xa1%\xea7gE¡±,\xb6\x8d\xbe\x89\xd4\xe0\xe7|r\xfb\xe7\xcf\xdfB\x84¡P\xc7\x89Ji\xd0\xdc\x0d\x00 ZZ\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x8a\x8a\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x17\x00\x00\xff\x01\x00\x01\x00Di\x00\x05\x00\x03\x02h2\x003\x04\xef\x04\xed**\x00\x01\x00\x11\xec\x04\xc0\xfd\x0bM\x81\x08\xccO\x13\x8dI\x13B\xc0\x9a5Ks=\x89\x845\xeb\x93\x18\xfcI?-)n\x9e;r¡Pdb\x00\xe8\x12N\x01D[\xb2Kk6M\xb2A5sV\x0fU\xcb\x17\x9b"\xce¡ÂfU\xc7\xe3_\x83\x87\x0c\xf8y\\j\xc7:\x887&>\xbb\x84R\xb5\x83@0o`\xe8\x86j\x14\xb6S0\xab\x8a\xb8\xa0\x169\xbbt\xe3]\x83\x88S\x01\x01\x1e\x89\x16\xa8\x89r¡Ó\xde\x92]\xa4\xd1\x17K\x96\xc4\xcc\xaa\x8c\xbf\x0bsl6\x9d!\x97S_8\x93\xact\xb3E\xa9\x0d\xdf\xd9\x0e\x0b\x87\x961\xcc\xcff\x86j\xfb'\x04\x82\xd8\xb2\xe7\xfcN\xd8\xf6T\xa8\xe1oh`¢G~\xd6\x8d\xc9\x0cd\x9e%\x17<\x81Fw\x15.XJ6\xc8y*\x8e\xf1\xa9X\xb2\x9dg\x165E¡Ps\xe0\xe8\xbd\x12\x19nS¡P\x8a]\x08 0(\x16;\x85\x02\xed\x9a\xcd\xd4g.YH\x8dkS\x07\xbf\x19n\x97\x05G\x14¡±¢Fx\xf2p\x85\xfb\x0e@$9{E_03?\xe0aj\xfb\x0285K\x97b\x9bR\xea\xc3J\x8e\xca\xa6\x1ac5F\xe5\xac\x90\xd1'\x15\x17\x1a\xdc*\x0c>eK\xc3gu\x1c\xab\x9b\xdd\xf3\x83\x07\xa6\xb2~\xe1\xab/\x05:\xce\xf2\x83\x0d\xec\x023E\xacE\xc7D\xe6\x9aj\xb5!\xa9\x85"#\x88t\x92\xba4\xc1\xc2\xc1(j\x99\x7fC\xfa\xbd\xd5\xfau\xc5GM\xb3\xc2\x07\x81\xeb\x04\xc4r(Ma\xab\x02\xa9\x88\xdb¢X"}E\x19\xf3w\x03\x82d¡Ó\x967?\xc3U\x89\xacU#\xed¡±\xabB\xd1.\x09{%&\x069\xc5\x14A\xc8\xb9*w\x19S\xc3\xc7z\x1a\xb50\xe3\x0c\x98\x0b\xf3\xce\x1e\xe9\x91H\xd3\x1b\x0e\xd1;X<\xb3^A\x93\x16QBa\xe7\xa4\x08*VNex\x86\x88\x1f\xb4\xf3pE\xb8\x1bR3¢XT\x17\xbcPD\xc6\xdf\x83+\xdf\xe6>\x82u\x16\x89\xf33\xd9p\xaa/7\x82\x9b(!mk\xcd\x9e\xf3\x84¡Ó\xe4F\x19\x0bv/)U\x18\xc4\x1e\xd9\x07\x937xDm\x98¡Ó\xf80n\xf5"\xab\xc0(\x8c\xf6\xa9\x09H\xc8S\xd36t\x0d\xd2A\x0c\x95O\x1c\x10¢D3\xd5})s\x93X\x92m\x0eW\x8d8\x89\xbc\xe7\xa6M\x85¢D\x06<\x98_\x1a6%\x95Vf@\xabf\\\x97,¢FX\x9c\xf8\xf0\x84\xc1\xf5\xc0¢F\xc1y\xa4IO¡Â,\x0e\xd0X\x97\x9eV\xcf\xd9\x93tY\xaaM\xe0\xb5`U\xe2\xb9SrAa¡Ò\x1e\x13x\xc4>$\x85\xd1C\xaay\xa9\xabI"¡PMjG\xcd\xf8\xcb\x9d\x11\x1e\xabJ\x97\x9fI9\xe64\xa0\x1b\x11\x99rc]i\xc2c&{\x86\x9a\x17\xa8\xaa\xe6\x12T¢D\x94!f\x9d\xe0\xc6L\x1c|I\x847\xab\x8a\xe3Qf\xc7\x0d\x04dX[\x06P\xfa5\xc9\xd6E\x0e\xe8*\x90b\x04\x1b$¢X\x88\x98\xea\xbb&Bl\xb6g¡P=¡Ó\x80\xd1w¢G\xf5\x89\xc1\x1c¡Ò@y\x02\xaa3\x8b\x89\xfc\x14w\xdaJC5\x02\x7f(\x13W\x19\x1bo¡P\xc9HH\x102\x8d\xe2D\xa0\x98\x92\x83\x1a\xce\x17\x0c\xcf\x1f\xda\x00EE\xa9T\x9b\x89\x0bs5R\xb6¡Âi\x86\x1c\xf1\x10\xc3I\x16W\xdaY^\x80\x830x\xc8\x95\xf4\xe2\x82\x09|\xbb\xe1 \x87\xc9E<\xbeV\x04\x9d'\xbf\xc0%\xce\x05\xec\x84L!\x8c\xfe$CR\x09\x00uc\xa4\x83\xf3\xce\xa9\x85a\xa0\xbc8¢G\xbbH;\x81[\x15\xe0@\x8c\x12\x8e_\x02x\xb8Yc\xdb\xf4?¡P1\xb6\xf6D{\x81\xa1\x06R\x1bf\x86)M\x05!`\x17\xe8\x11\xdb\x0c\xacRIG\x1f\x01¢G`\x9cG}\xf6U\x1e\x94\xb9\x0e\x90\xb4%*!\x1akaz\x81\x17:d\x18\x93C\xa1\x09\x11\x94@\xb6\xab\xd9x\x905\xfb3n\xab\x94:\xaa&¡±\xe00¡Â5\xca\x1d\xb8\x14¢X\x9a\x8b\x04\xc9R\xc4\xeb\x95\x0f7\x86\xf85li\xfa\x09y\xc5}\xdf[B\x06V7Q\xe1F\x03\xf0\xbf\xfa\x86`\x93\x95\xcc?\xf2,\xf5T\xc7\x02\x08.H\xfc-\x8d"0L\xfb\x15\x9d\x16kP5\x9f_5\xc3\x01\x9b*O'nFH\x80k\xf3\x87¢F¡Ñ8\xbb\xdc\x82\xeb\xe3b\x98\x80\x18\xb9\xbb\xc6~\x88\x0efI\xb6Dq&*`\xa8¡P\xfb\\#x_\xbc)\x1dxQ¡Â\xd4f\xc135\x94\xd2h\xc3¢Fb\x99\x11\xe1\xcc\xc5\x1c9\xf1\xc5S\xceK\x1b\x94\xd4\x02O¢G\xa9\xf8@\x971U\x14Nr!\x1d\x99MZ\x97\xcan\xca\x08\xb2\xfcd\xd2\x84\x86\x8bg\xa48\xb4#\xdd8\xad\x90&\xb6`\x08~\x92\x03\x9a/=-M\xed\xc1%[0m" 400 -
+2024-11-28 02:54:48 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:48] code 400, message Bad request version ('//\xf1\xc0?Q\x12y\xf3\x8e6/ms\xacd\x00Q\x1a\x1a\x08L')
+2024-11-28 02:54:48 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:48] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06\xfc\x03\x03\x7f¢FP\x1b7\xf9\xe9>\xdb\x0db\x92¡±{@\x9dxe\x8b\xca\xf9¢GD\xe79\xae]Ch\x10n\xab @\x87\x08z\x8e_\xfa¡ÓZ\x0b¡±_3T\xb2@\x16\xb2Z\xca\xf1\x8a\xf3\xef\x82-\x13\x9a\xfe<%9\x00 ZZ\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ZZ\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00\xfe\x0d\x01\x1a\x00\x00\x01\x00\x01\xc4\x00 \x0c\x82\xe0\xfaV\xe3\xea\xf1\xf2De\xf9\xec\xe7&g\x11\x1cQ¡PE\x91\xd6\xbe(\xc2B\xdd\xb9\xda\x03{\x00\xf0\xf0\xd3\x0f\x9a\xc6y5\xc2\xad\xdc\xed\x8bR@r\xab]\x88\xb8w\xbd\x82\x05c\x1e\x90\x08\xe9\x0b\xe0\x9a\xeb\x1a\x0d\xb6p\xd8\x07\x1a]\xc8\xb2\x7f\xf9P|\xf2\x09¡Ñ\x02V\xf0\xffo\xdb\x8d !\xf9\xd2\xea\x10\x99_\x0c\x9a\x88-`\x18";XH;c{\x18X\x85/\x01\xc0\x09\xbai¢D\xb8\x01\xb34\xab\x90\x9b\xf0\x85¡Ó^\xe2\xedTK\x08S\x9c¡Ñ\x83\xb4\xd1$S\x0db%\xfe\x16v\x1c\x8b\\`\xed\x07¡±l\xed\xdb\x88\x88+\xab:?\xc5\x85~\x04\xc0DI<9\x85//\xf1\xc0?Q\x12y\xf3\x8e6/ms\xacd\x00Q\x1a\x1a\x08L[0m" 400 -
+2024-11-28 02:54:48 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:48] code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00\x003\x04\xef\x04\xed::\x00\x01\x00\x11\xec\x04\xc0\xb2\xe2^\xabv\xc5\xf0\x89"R\xc9\x98\x10\x19\x07\xbd\x96.\xb8Xf\x0e\xeck\xfa$')
+2024-11-28 02:54:48 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:48] "[31m[1m\x16\x03\x01\x06\xc0\x01\x00\x06\xbc\x03\x03`\x1a\x0e\xeeAo\xef\x8f5T\x03I¡±oh\x8f\x00\x08\x94\xab\xac\xd1\xc7\x9c¢G)\xe3\xe9\xc1\xab¢Xn \xd58wBo\xe3\x89>\x82\xf2\x17G\xaa\xc3_34\xcb"H\xe2\x80T\x8d\x9b\xe2\xfeg\xeb9:K\x00 zz\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SJJ\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00\x003\x04\xef\x04\xed::\x00\x01\x00\x11\xec\x04\xc0\xb2\xe2^\xabv\xc5\xf0\x89"R\xc9\x98\x10\x19\x07\xbd\x96.\xb8Xf\x0e\xeck\xfa$\xa0[0m" 400 -
+2024-11-28 02:54:48 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:48] code 400, message Bad request version ('\xb3Q\xbb\x17')
+2024-11-28 02:54:48 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:48] "[31m[1m\x16\x03\x01\x06\xa0\x01\x00\x06\x9c\x03\x03\x97\x9aB\xbf\x9d\x15\x9a\xe1\xd6M\xbe\x93\xeb}\xc7\xa88\xc88\xb3\x8f6q\xb8\x96\xf0@\xe0G2\xdbO B9\x19eU¢D\x92\x98\xa0\x96A¡Ñ\xce\xdb\xdfw\xf1jj\x14\xb9\xf48\xd4\xd0h\x85\xd8\xdf\x96\x8eR\x00 \xba\xba\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\xba\xba\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01Di\x00\x05\x00\x03\x02h2\xff\x01\x00\x01\x00\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04\xef\x04\xed\xaa\xaa\x00\x01\x00\x11\xec\x04\xc0\x90A\xbb \xd6{\xa0\x8c\x9f\xa4\xe4\x14ou\x93\xa1\x83\xb6\xc5\xb6\x17\\\xa0\xc9_\xe7a\xc1\x1cQ]\xf8'1¢D\xac\x16z\x9b\x81uX\x0580W\xd6z~Z\x1e\xfe\x89\x0b\x96\xaa:\xa6\x07P\xc8\x15\xbf\xb3\x07\x1c\xecZ(\x84\xaca\xb3|\x81\x1eYnow8O\x89\x16\xc6\xeb\x1d\xb3Q\xbb\x17[0m" 400 -
+2024-11-28 02:54:49 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:49] code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+2024-11-28 02:54:49 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:49] "[31m[1m\x16\x03\x01\x06\xc0\x01\x00\x06\xbc\x03\x03\xad¡Ó\xc4(\xdd¢D\xa6&DW¡PcV\x96\x1fH\xe9\x00\xe7\xd1\xeb\xeb¡±\xbbC\xcb.e\xde\xf0'W \xb8\x93\xd4\x1d\xee\x18\xb3\xfa\xec\xd6X\xdb\xbd3\x03@\xd0¡P!\x09\xa0KYI\\\xdai*px.\x13\x00 jj\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\xaa\xaa\x00\x00\x00\x17\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00[0m" 400 -
+2024-11-28 02:54:49 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:49] code 400, message Bad request version ('\x00\x02\x01\x00\x00\x12\x00\x00\x00')
+2024-11-28 02:54:49 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:49] "[31m[1m\x16\x03\x01\x06\xc0\x01\x00\x06\xbc\x03\x03\xa41\x0d\x10\x82\xd0\x8c\xf1\x1e"\xe0\x95\x9cIF\xdeN\x88\xbb\xca}'L\x0b[\x87H|\xa6\xbd-\x94 ¢F¡ÑD\x14Q\x1f\xce[(\xcb¡Ó\xbd\xd2(\x1f\x8e\xdd\x8d¢D\xf1\xfaYV\xa4\xecV \xf3\x0e\x0eP\xde\x00 jj\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Szz\x00\x00\x00\x17\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\xff\x01\x00\x01\x00\x00\x0b\x00\x02\x01\x00\x00\x12\x00\x00\x00[0m" 400 -
+2024-11-28 02:54:49 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:49] code 400, message Bad request version ('\xde"\xb4\xea\xc0*u\xbf\xb2\x869\xfa\x8a\xebKz\xecqj\xe0\xf3\xb4\xcfhOW\xb6[#\xaeE\x003\x04\xef\x04\xed')
+2024-11-28 02:54:49 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:49] "[31m[1m\x16\x03\x01\x06\xc0\x01\x00\x06\xbc\x03\x03\x08u{\xc05~\xaeT$\xa0l\x93i\x9a\x0c\xeeK\x94]¢G\x0f\xf0{/FQ\xe0\x84bbj\xa1 \xdd\xe9'7jm\x1a\x11A\xef\xa0\xdb\xeed>P\xc08\xe5U\x07`t\x1b\x8e\xe6Rr<9\xea\x9b\x00 JJ\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Sjj\x00\x00\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00\x0b\x00\x02\x01\x00\x00\x17\x00\x00\xfe\x0d\x00\xda\x00\x00\x01\x00\x01\xa6\x00 \xb3X\x96\x13T\xd1\xed\xecQ\xc1Am\x94\xa4\xf0P\xad\xac\xfeB\x827;\xbc\x1d-|l(\xd1\xcf'\x00¢X\xf8\xbbo\x84\xc4\x7f\xba\xf39\x7f\x0d|L\x16\xde7\x08\x8fh5\xce;K\x1f¡P\xf6\xea\xabV\xb2$D\x93\xc0jEQ\x09p\xf1\x8a\xa1\xf6p\xdf\x9b\xa9j\xb4\xf3z\xcb\x87\xd3M0\x90\xcf\xf3\xaeFZB\xe1]\xdcp\xe9\\\xc8\x1b\xfd'\x0d2\x12i\\\x02\xca\x92\x1a\x7f=\xe7\xe6\x05\xf86\xcf\xbfY¢D\xa9\xcbIJ\x1c/CwL\xe2\x8aK¢X\xceL\xb4;Zo\xf6T\x15\xcc!¡±\x91|%l\x05\xe7\x09kC\x1c¢X\x16}\x07\xe1\x17\xb9\xdc\x86\xce\x1e\xe7\xe4\xb2\x14P\x0d\xde"\xb4\xea\xc0*u\xbf\xb2\x869\xfa\x8a\xebKz\xecqj\xe0\xf3\xb4\xcfhOW\xb6[#\xaeE\x003\x04\xef\x04\xed[0m" 400 -
+2024-11-28 02:54:49 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:49] code 400, message Bad request version ('\xfe\xe9\\\x01\xab\xc6\x04h\xa4\x9cw&8\x16\xfa')
+2024-11-28 02:54:49 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:49] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06\xfc\x03\x03\x9b\xeb\x9a. \xc9Zh&VqK\xd4\x00\xf3*\x0b}\xc1\x1d\x91\xfc\x13Y\xa4\x91e\xb9\x14\xde\xf5/ bAH\x97I\xe7\x1a\xca\xf0\x04\x11\xa9\x00i\xb2Y\xf5\xf8\x08A\xeeYN\xef\xac\xc2\xc7\x94\xe20\xd8\x1b\x00 jj\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93\xaa\xaa\x00\x00\x00-\x00\x02\x01\x01\xfe\x0d\x01\x1a\x00\x00\x01\x00\x01\xfd\x00 \x8c\xe9\x97AK\xeb_1JW\xb8¡ÑA\x87\x03\xeeT\xfc)B¡P\xa4\xe1\xb9\xa1\xfdl\x0dReeX\x00\xf0\x87%\xd3\xb5q¡P(\x1f\xfb\x8dH6\x18"\xc3 (\xcc\xb8=\xce;¡Ñ\xb4U-\x16\x91\x14w\xf5\xfb\xfb\xde4\xcf\xd4\xac\xebB\xa0Mx(PI\xddk+¡Ó\x81\xb3\xc07\xf3\xd2\xa8R\xbe\xff\xea\xa9\xf5\x9fs\x8f\xbf\xd8\xacRR\x08+\xf4\xba\x96UQ<jQU\xfe\xb6\x8b\x02\x9b^a7\xbdI\xd45)n/z\xa1Q\xfe\xad\x8e[\x9e\xa1\xb4\xdb\x9aK\x88\x16:^\x03\x86\x0bJ\xbcT\x1d¢F\x10 \xe1v\xac\x15z\xe3)\xfc\x94\xe4\x9c\xfcJ\xeb\xb9\xbd\xd0\xeb\x87q\x12-\x1f%\xcd\xa1@\xcd_\xca\xa0\xcd\x0e\xfb\xa1-W\xfd\x0f \xfa\x9f\x0d\xfeB\x9e\x18\x1aJq\x15\x9f\xd0\x09\xfe\xe9\\\x01\xab\xc6\x04h\xa4\x9cw&8\x16\xfa[0m" 400 -
+2024-11-28 02:54:49 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:49] code 400, message Bad request version ('\x9b\x00e')
+2024-11-28 02:54:49 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:49] "[31m[1m\x16\x03\x01\x06\xa0\x01\x00\x06\x9c\x03\x03\\R\xfa'\xf8X\xcc\xea^\xfe3\xd8\x02\x8b<\x10¢X\x0c\xc8\x15\x8dv\xd3\xd5\x99\x02+/\xdd\xf1\x06T \x9b\x00e[0m" 400 -
+2024-11-28 02:54:49 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:49] code 400, message Bad request version ('\x9e\x91¢X\xbdB\xa4')
+2024-11-28 02:54:49 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:49] "[31m[1m\x16\x03\x01\x06\xe0\x01\x00\x06\xdc\x03\x03&\xc1\x81\x8a\x813\x09&\x09o\xc5\xe4p\xfdG\xb8\xc6}\x86M>6\xb2\xe7\xf3/\x11 \x99G\xe3( \xe2.\xd1\xbf\xcdl\x9b\xc5\xa6s\x00lfi\xbb\xd8\xd0\x0d\x01¢G\xbc\xd8:M¢D\x8ac-6¡ÑO)\x00 ::\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s\xda\xda\x00\x00\xff\x01\x00\x01\x00\x00\x17\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\xfe\x0d\x00\xfa\x00\x00\x01\x00\x01W\x00 %\x11\xd0¡Ó\x01K\x1f:\xd3M\xbc\x06\xe3\xd2\xc5g\xe0\x1f\x8a\xdc\xef\xfc\xb3\xccS6\x0bE@\xdb:\x02\x00\xd0\x8f\xd6\x1f\x03\xb5\x0b\x98\xeen\xbd\xd5v\xee\xc4\x0fv\x0c2\x04\xa9fq \x9e\x91¢X\xbdB\xa4[0m" 400 -
+2024-11-28 02:54:49 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:49] code 400, message Bad request version ('\xe5\x12\x89\xab}\xff\xd17Cei\xc1`?\x8c\xe2\x12\xcb\x17\xd4\x97\x99\x91\x15\x99xt\xcb\xef\xee\x95\xf1\x86\x949\x82m\x13t\x94S[\xbd*Tp\xcf\xff;kT\x86d\xb2\xff\x01\x00\x01\x00\x00\x12\x00\x00\x00')
+2024-11-28 02:54:49 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:49] "[31m[1m\x16\x03\x01\x06\xe0\x01\x00\x06\xdc\x03\x03!\x05\xc6\x89X\xda\xa4i+W\xda\x1ap/\xd0\x84\x89g\x09\xf2F\xcb\x06\x85\xea\xbc\x18\xfe\xdbG+\xda \xeaF\xc3\xba\x13Mh\xca\xb2¢G7o\x93}\x1b!\xb3Q\xd3.\xcb\x1a^\xf07y\xf3#N\xdbQ\x1d\x00 jj\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sZZ\x00\x00Di\x00\x05\x00\x03\x02h2\xfe\x0d\x00\xfa\x00\x00\x01\x00\x01\xaa\x00 \x81\x0d\xb6\x84\xa4\xe3t¢G\x0c`\xe8\xcf\x01\xe1\x82xx\xba\x8c\x93$ai\xbc¡Ó\xe3\x93G@K\x95T\x00\xd0.\xc2\xc2\xb2:\xc1,\x05\x9c\x15Y\x07\xf8\xc4\xf9¡Ñ9\x1d2+\xab\xf0\xef\x02\xaec\x85\x9f@\x0bG\xc25\xf5@\x83\x1a\x06\x0d\xfa\x19\xe0\xb4f\x0d\x98m\xa9\xfe\xcay\x9aiQ\x1c,`\x8a\x0b\x7f\xf8\x9c\xff\xec\x03B\xa1=\xa9¡Ò\x85\xea\xa9~\x8a\x1f¡Ó¡Ñ\xc9\xa9\x995\xf1\xc6¢X]\xab\xc2<\xdf\xb3\x8a!\xe2\xa0c\xcc\xfc\x90X\xf4s\x09+\x84\x04W\xd8B5?!'!C\xac\x11\xdfL\x03\xdc\xa8\xe5G¢FL\xd2\xe5\xd0\xad\x96\x88\xb2¡P\x1do\xe5\x1e\x00M\xa4\x08\xb8\xeb¡Â\xbe\x95n\x99\x7f\xef_K\x85\xe5\x12\x89\xab}\xff\xd17Cei\xc1`?\x8c\xe2\x12\xcb\x17\xd4\x97\x99\x91\x15\x99xt\xcb\xef\xee\x95\xf1\x86\x949\x82m\x13t\x94S[\xbd*Tp\xcf\xff;kT\x86d\xb2\xff\x01\x00\x01\x00\x00\x12\x00\x00\x00[0m" 400 -
+2024-11-28 02:54:49 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:49] code 400, message Bad request version ('\x00\x0f\x9ba')
+2024-11-28 02:54:49 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:49] "[31m[1m\x16\x03\x01\x06\xe0\x01\x00\x06\xdc\x03\x03\xddc\x1f\xe9\x7f1(\xcd[v"\xa8\xcb\xca\xbd=\xa0?\x8eR\xf5\xfb\xecj\x0f$¢X\xb5\xd9U\xb6f 5\xb8o\x14\xfd\xbbU(\xaa\x07\xf3\x06\x19<\x8b\xebp`{\xa4#6\xe4\xea\xc4\xe5\xfa\xf5'\x8e\x04\xc2\x00 **\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s\xba\xba\x00\x00\xfe\x0d\x00\xfa\x00\x00\x01\x00\x01¡Â\x00 \xf1\xe52\xb9\xbbf\x9a\xe3P@e5d\x05\x90\xe4_\xc7!\x93\x96>\xc8\x88P\xf2\xde\xd9`\x97\x173\x00\xd0\x1b\xf0\xf6\xe5%¢X\xc9%F4¡Â\x90\x16$\xf3\xd9I.Hl\x1f\xd0\x80`\x9aT\xffdW\x18\xbd\xc4'\xe8\x05R\xc7\xac\xd0n\xdd\xbe[<\xc5z\x0c$\xccR;c\x8a\x07!\xe7\x05;\xd5b\xc1~\xfeJ\xa8tTn u\x90e¢F\xc0\x9ew\xe7\x98\xc4OFuo\x10\xa4\xfbp?\x90\xfa\xf3¡Ó\xf1\xe9\xd8T7\xd3\x82\xbd<\xeeJ\xe8K\xc4\xc5\xdb\x1cs\x80\x0d\x1dy4\x81\x9a\xcb1\xeb\x85\x93Q\x9a6\xf3\xad\xcb\x96\xd8\xba\x1f\x05jiA\x9d\xcc'M5X\x19a\x9c\xe6\x88yD\xcb9\xf0,`Uph"\x12\x19\xddO\xb6\xd9}\xa8\xeaL\x13Q¡Ñ_\x1dp\x8d\x1c\xba¡Ñ\x8d\x08\x83\xb9gm\x02\x84(\x1f%\xaa\xc7P\xf4\x079\x0b\xa1K{\xf0^\xc8¡±\x18ws\xbd\xd5Di\x00\x05\x00\x03\x02h2\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x12\x00\x00\x00\x17\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x003\x04\xef\x04\xedjj\x00\x01\x00\x11\xec\x04\xc0\xe8h\x98a)\x08\xfc\xc0\x8e¡P\xc6\xcb\xf5\x1c\xa4E\x17\xba\x99\x83h\xf9R\xc1\x82#¢G.%\x8d\x89\x0bRc\x85;v¢F\x85¡P0y5\x03\x99\xfa\xf8L\xc1U\xbc<\x8b\x9d\xc5\xa4G\xdeY\xba\xf2\xe7V\xa6\xb5Q\x9d+\x04\xf9\xe7u\xf1\x12\x8fo\x9b\xa02\xa6\x8d\x8b\xda*:lm\x9c*\x87\xf8A\xb2v\x1by\x99\xd2{\xd5\x19\xae\x9c\x96Eu\xac\x0f\xbe9\xbe\x8a\x06\x1e\xd6\xd1\x91\xf4\xbaT\x0c\x90\x0b\xdc;\xac\x03\x12\x154\xc7\x96>U5\xfc\xc7=T\xe1|\xd2\xe3\xbd\x83K=\x14\xca/\xdc\xf3\xa6\x8b\x82)\xbe\xda\x80\xd1 \x04\x90\xf1ih\xf5\x9de\xac\xc8\x1f'\x8fe\xd4o¢Xs\x8d\x90\x14\x03\xc3"I\xf1g)\x18\x9a\xbbJ\x16$v¢X¢G\xcb \x93\x11\xa6\x9c\x85@*\x13\x02A\xe0\xc6ic\xc7N~V\x08\xb2\xcb\xc1\xf8\x94Y\x19P\x99\x0b&b\xcf\xe7\x15;\xe6=nFuV\xcc\x87\xcc\x10\x86¡±`.\xbd\xf3x#\xf2!\x94;"\x9c\x9b\xa6S\x80¡Â\x19aB\xe93\xb8F\x8b\x1d\x07\x8b\x99\xaa\xe8\x9a/\x0b\x14M\xa0\x00\x0f\x9ba[0m" 400 -
+2024-11-28 02:54:57 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:57] code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06\xfc\x03\x03\x02\x81¡P¡Ó\xd2')
+2024-11-28 02:54:57 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:57] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06\xfc\x03\x03\x02\x81¡P¡Ó\xd2[0m" 400 -
+2024-11-28 02:54:57 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:57] code 400, message Bad request version ('\xf4\x10\x15\x12\xdc/\xee\xaa\xc1\xb2fp\x03\xac\x92\xf3\xf5')
+2024-11-28 02:54:57 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:57] "[31m[1m\x16\x03\x01\x06\xc0\x01\x00\x06\xbc\x03\x03\x03ak\xb2\xee,\x07\x9b\x81\x1d\xe5\xbc\xbe\xe3¡±\xad\xf9gG\x82\xb6QlU\x8b8\x9c\xc7\xdd\x11\x13\x06 TJ\xeb\xb6^\x84\x08\xbf\xff\xbd\xd9\x03\xa8\xef\xc4)\x04\x19\x14\xe1\xb4\xce¢D\x0e\x9d\x8d\xceH\xd32:\xb2\x00 \xba\xba\x13\x01\x13\x02\x13\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\x13\xc0\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\xaa\xaa\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1Di\x00\x05\x00\x03\x02h2\x003\x04\xef\x04\xed\xaa\xaa\x00\x01\x00\x11\xec\x04\xc0\x8bl\x91n\xfakZ1{\xef()_\xe3\x8e\xa6yD\xbc7\x11_\xc1\x8c\xd2\x855\xce¡ÑB^\x07`\xf856;+4\x16"\xb9Ap!\xdfS¡± \xd5z\x1b\x09\x06\xf3\xd2\x11E\x86\x990\\\xa0\x7f\xe3\xc7?C\xb6¡Ó\x84G\x82b\x0b\xec\x94u\xffJ\x81\x97B\xcc\xbd&-\x95(\xbf\x99\xd2"B\xf9 \xf4\x10\x15\x12\xdc/\xee\xaa\xc1\xb2fp\x03\xac\x92\xf3\xf5[0m" 400 -
+2024-11-28 02:54:57 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:57] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x00\x01\x00\x06\xfc\x03\x03¡±e\xfei')
+2024-11-28 02:54:57 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:57] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06\xfc\x03\x03¡±e\xfei\xa0\x01\x11\xe9,\xb9f\xff\xb9\x95\x1b\x8e\xbb\x1b\x04p|\xc8![0m" 400 -
+2024-11-28 02:54:57 ERROR: 192.168.2.12 - - [28/Nov/2024 02:54:57] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06\xc0\x01\x00\x06\xbc\x03\x03\x82\x9fF\xda\x1a\x18\xf8\xad\x8e\x03?\xed\x19l\xcfeg¡Ñ\x0f')
+2024-11-28 02:54:57 INFO: 192.168.2.12 - - [28/Nov/2024 02:54:57] "[31m[1m\x16\x03\x01\x06\xc0\x01\x00\x06\xbc\x03\x03\x82\x9fF\xda\x1a\x18\xf8\xad\x8e\x03?\xed\x19l\xcfeg¡Ñ\x0f\x1eZ@@[0m" 400 -
+2024-11-28 02:55:45 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:45] "GET /camera HTTP/1.1" 200 -
+2024-11-28 02:55:45 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:55:45 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:45] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:55:45 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:45] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 02:55:53 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:53] "GET / HTTP/1.1" 200 -
+2024-11-28 02:55:53 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:55:53 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:53] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 02:55:53 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:53] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 02:55:53 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:53] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 02:55:53 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:53] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 02:55:53 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:53] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 02:55:53 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:53] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 02:55:53 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:53] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:55:53 INFO: 192.168.2.12 - - [28/Nov/2024 02:55:53] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 02:56:08 INFO: 192.168.2.12 - - [28/Nov/2024 02:56:08] "GET / HTTP/1.1" 200 -
+2024-11-28 02:56:08 INFO: 192.168.2.12 - - [28/Nov/2024 02:56:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 02:56:08 INFO: 192.168.2.12 - - [28/Nov/2024 02:56:08] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 02:56:08 INFO: 192.168.2.12 - - [28/Nov/2024 02:56:08] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 02:56:08 INFO: 192.168.2.12 - - [28/Nov/2024 02:56:08] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 02:56:08 INFO: 192.168.2.12 - - [28/Nov/2024 02:56:08] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 02:56:08 INFO: 192.168.2.12 - - [28/Nov/2024 02:56:08] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 02:56:08 INFO: 192.168.2.12 - - [28/Nov/2024 02:56:08] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 02:56:08 INFO: 192.168.2.12 - - [28/Nov/2024 02:56:08] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 02:56:08 INFO: 192.168.2.12 - - [28/Nov/2024 02:56:08] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:45 INFO: Server will run on IP: 0.0.0.0
+2024-11-28 19:58:45 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.18:5000
+2024-11-28 19:58:45 INFO: [33mPress CTRL+C to quit[0m
+2024-11-28 19:58:45 INFO:  * Restarting with stat
+2024-11-28 19:58:49 INFO: Server will run on IP: 0.0.0.0
+2024-11-28 19:58:49 WARNING:  * Debugger is active!
+2024-11-28 19:58:49 INFO:  * Debugger PIN: 137-890-720
+2024-11-28 19:58:52 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:52] "GET / HTTP/1.1" 200 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 19:58:53 INFO: 127.0.0.1 - - [28/Nov/2024 19:58:53] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 19:59:00 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:00] "GET /upload HTTP/1.1" 200 -
+2024-11-28 19:59:00 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 19:59:00 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 19:59:00 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:00] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 19:59:10 INFO: Files uploaded: 20241128195910_20241120154511_Plant_1_Generation_Data.csv, 20241128195910_20241120154511_Plant_1_Weather_Sensor_Data.csv
+2024-11-28 19:59:10 INFO: File processing completed successfully.
+2024-11-28 19:59:10 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:10] "POST /upload HTTP/1.1" 200 -
+2024-11-28 19:59:10 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 19:59:10 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:10] "[36mGET /static/plots/ae_loss.png HTTP/1.1[0m" 304 -
+2024-11-28 19:59:10 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:10] "[36mGET /static/plots/mlp_loss.png HTTP/1.1[0m" 304 -
+2024-11-28 19:59:10 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:10] "GET /static/plots/error_distribution.png HTTP/1.1" 200 -
+2024-11-28 19:59:10 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:10] "GET /static/plots/error_timeseries.png HTTP/1.1" 200 -
+2024-11-28 19:59:10 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:10] "GET /static/plots/anomalies.png HTTP/1.1" 200 -
+2024-11-28 19:59:10 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:10] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 19:59:10 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:10] "GET /static/plots/real_vs_pred.png HTTP/1.1" 200 -
+2024-11-28 19:59:11 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:11] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 19:59:15 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:15] "GET / HTTP/1.1" 200 -
+2024-11-28 19:59:15 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 19:59:15 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:15] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 19:59:15 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:15] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 19:59:16 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:16] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 19:59:16 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:16] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 19:59:16 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:16] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 19:59:16 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:16] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 19:59:16 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:16] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 19:59:16 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:16] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 19:59:16 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:16] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 19:59:19 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:19] "GET /test_model HTTP/1.1" 200 -
+2024-11-28 19:59:19 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 19:59:19 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:19] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 19:59:19 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:19] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 19:59:29 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:29] "POST /test_model HTTP/1.1" 200 -
+2024-11-28 19:59:29 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 19:59:29 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:29] "GET /static/plots/Yeild_test_results.png HTTP/1.1" 200 -
+2024-11-28 19:59:29 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:29] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 19:59:29 INFO: 127.0.0.1 - - [28/Nov/2024 19:59:29] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 20:00:11 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:11] "GET / HTTP/1.1" 200 -
+2024-11-28 20:00:11 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 20:00:11 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:11] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 20:00:11 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:11] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 20:00:11 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:11] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 20:00:11 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:11] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 20:00:11 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:11] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 20:00:11 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:11] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 20:00:11 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:11] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 20:00:11 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:11] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 20:00:11 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:11] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 20:00:14 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:14] "GET /camera HTTP/1.1" 200 -
+2024-11-28 20:00:14 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 20:00:14 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:14] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 20:00:14 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:14] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 20:00:47 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:47] "GET /camera HTTP/1.1" 200 -
+2024-11-28 20:00:47 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 20:00:47 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:47] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 20:00:47 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:47] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 20:00:47 INFO: 127.0.0.1 - - [28/Nov/2024 20:00:47] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-28 20:01:31 INFO: 127.0.0.1 - - [28/Nov/2024 20:01:31] "POST /camera HTTP/1.1" 200 -
+2024-11-28 20:01:33 INFO: 127.0.0.1 - - [28/Nov/2024 20:01:33] "POST /camera HTTP/1.1" 200 -
+2024-11-28 20:01:35 INFO: 127.0.0.1 - - [28/Nov/2024 20:01:35] "POST /camera HTTP/1.1" 200 -
+2024-11-28 20:01:37 INFO: 127.0.0.1 - - [28/Nov/2024 20:01:37] "POST /camera HTTP/1.1" 200 -
+2024-11-28 20:01:39 INFO: 127.0.0.1 - - [28/Nov/2024 20:01:39] "POST /camera HTTP/1.1" 200 -
+2024-11-28 20:01:47 INFO: 127.0.0.1 - - [28/Nov/2024 20:01:47] "POST /test_anomaly HTTP/1.1" 200 -
+2024-11-28 20:01:47 INFO: 127.0.0.1 - - [28/Nov/2024 20:01:47] "GET /static/images/20241128200131.png HTTP/1.1" 200 -
+2024-11-28 20:01:47 INFO: 127.0.0.1 - - [28/Nov/2024 20:01:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 20:01:47 INFO: 127.0.0.1 - - [28/Nov/2024 20:01:47] "GET /static/images/20241128200133.png HTTP/1.1" 200 -
+2024-11-28 20:01:47 INFO: 127.0.0.1 - - [28/Nov/2024 20:01:47] "GET /static/images/20241128200135.png HTTP/1.1" 200 -
+2024-11-28 20:01:47 INFO: 127.0.0.1 - - [28/Nov/2024 20:01:47] "GET /static/images/20241128200137.png HTTP/1.1" 200 -
+2024-11-28 20:01:47 INFO: 127.0.0.1 - - [28/Nov/2024 20:01:47] "GET /static/images/20241128200139.png HTTP/1.1" 200 -
+2024-11-28 20:02:17 INFO: 127.0.0.1 - - [28/Nov/2024 20:02:17] "GET / HTTP/1.1" 200 -
+2024-11-28 20:02:17 INFO: 127.0.0.1 - - [28/Nov/2024 20:02:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-28 20:02:17 INFO: 127.0.0.1 - - [28/Nov/2024 20:02:17] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 20:02:17 INFO: 127.0.0.1 - - [28/Nov/2024 20:02:17] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-28 20:02:17 INFO: 127.0.0.1 - - [28/Nov/2024 20:02:17] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-28 20:02:17 INFO: 127.0.0.1 - - [28/Nov/2024 20:02:17] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-28 20:02:17 INFO: 127.0.0.1 - - [28/Nov/2024 20:02:17] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-28 20:02:17 INFO: 127.0.0.1 - - [28/Nov/2024 20:02:17] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-28 20:02:17 INFO: 127.0.0.1 - - [28/Nov/2024 20:02:17] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-28 20:02:17 INFO: 127.0.0.1 - - [28/Nov/2024 20:02:17] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-28 20:02:17 INFO: 127.0.0.1 - - [28/Nov/2024 20:02:17] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:03:20 INFO: Server will run on IP: 0.0.0.0
+2024-11-29 01:03:20 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.18:5000
+2024-11-29 01:03:20 INFO: [33mPress CTRL+C to quit[0m
+2024-11-29 01:03:20 INFO:  * Restarting with stat
+2024-11-29 01:03:24 INFO: Server will run on IP: 0.0.0.0
+2024-11-29 01:03:24 WARNING:  * Debugger is active!
+2024-11-29 01:03:24 INFO:  * Debugger PIN: 137-890-720
+2024-11-29 01:03:33 INFO: 127.0.0.1 - - [29/Nov/2024 01:03:33] "GET / HTTP/1.1" 200 -
+2024-11-29 01:03:33 INFO: 127.0.0.1 - - [29/Nov/2024 01:03:33] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 01:03:33 INFO: 127.0.0.1 - - [29/Nov/2024 01:03:33] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 01:03:33 INFO: 127.0.0.1 - - [29/Nov/2024 01:03:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 01:03:34] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 01:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 01:03:34] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 01:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 01:03:34] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 01:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 01:03:34] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 01:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 01:03:34] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 01:03:34] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 01:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 01:03:34] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 01:03:34] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:04:13 INFO: 127.0.0.1 - - [29/Nov/2024 01:04:13] "GET / HTTP/1.1" 200 -
+2024-11-29 01:04:13 INFO: 127.0.0.1 - - [29/Nov/2024 01:04:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:04:13 INFO: 127.0.0.1 - - [29/Nov/2024 01:04:13] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 01:04:13 INFO: 127.0.0.1 - - [29/Nov/2024 01:04:13] "GET /static/assets/safe.png HTTP/1.1" 200 -
+2024-11-29 01:04:13 INFO: 127.0.0.1 - - [29/Nov/2024 01:04:13] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 01:04:13 INFO: 127.0.0.1 - - [29/Nov/2024 01:04:13] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 01:04:13 INFO: 127.0.0.1 - - [29/Nov/2024 01:04:13] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 01:04:13 INFO: 127.0.0.1 - - [29/Nov/2024 01:04:13] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 01:04:13 INFO: 127.0.0.1 - - [29/Nov/2024 01:04:13] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:04:13 INFO: 127.0.0.1 - - [29/Nov/2024 01:04:13] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 01:04:13 INFO: 127.0.0.1 - - [29/Nov/2024 01:04:13] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:04:13 INFO: 127.0.0.1 - - [29/Nov/2024 01:04:13] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:05:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:05:31] "GET / HTTP/1.1" 200 -
+2024-11-29 01:05:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:05:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:05:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:05:31] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 01:05:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:05:31] "GET /static/assets/safe.png HTTP/1.1" 200 -
+2024-11-29 01:05:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:05:31] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 01:05:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:05:31] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 01:05:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:05:31] "GET /static/assets/circus.png HTTP/1.1" 200 -
+2024-11-29 01:05:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:05:31] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:05:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:05:31] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 01:05:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:05:31] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 01:05:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:05:31] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:05:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:05:31] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:13:02 INFO: 127.0.0.1 - - [29/Nov/2024 01:13:02] "GET / HTTP/1.1" 200 -
+2024-11-29 01:13:02 INFO: 127.0.0.1 - - [29/Nov/2024 01:13:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:13:02 INFO: 127.0.0.1 - - [29/Nov/2024 01:13:02] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 01:13:02 INFO: 127.0.0.1 - - [29/Nov/2024 01:13:02] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 01:13:02 INFO: 127.0.0.1 - - [29/Nov/2024 01:13:02] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 01:13:02 INFO: 127.0.0.1 - - [29/Nov/2024 01:13:02] "GET /static/assets/circus.png HTTP/1.1" 200 -
+2024-11-29 01:13:02 INFO: 127.0.0.1 - - [29/Nov/2024 01:13:02] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 01:13:02 INFO: 127.0.0.1 - - [29/Nov/2024 01:13:02] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:13:03 INFO: 127.0.0.1 - - [29/Nov/2024 01:13:03] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 01:13:03 INFO: 127.0.0.1 - - [29/Nov/2024 01:13:03] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 01:13:03 INFO: 127.0.0.1 - - [29/Nov/2024 01:13:03] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:13:03 INFO: 127.0.0.1 - - [29/Nov/2024 01:13:03] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:14:46 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:46] "GET /upload HTTP/1.1" 200 -
+2024-11-29 01:14:46 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:14:46 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:46] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:14:46 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:46] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:14:48 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:48] "GET / HTTP/1.1" 200 -
+2024-11-29 01:14:49 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:14:49 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:49] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 01:14:49 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:49] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 01:14:49 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:49] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 01:14:49 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:49] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 01:14:49 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:49] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 01:14:49 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:49] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:14:49 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:49] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 01:14:49 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:49] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 01:14:49 INFO: 127.0.0.1 - - [29/Nov/2024 01:14:49] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:18:40 INFO: 127.0.0.1 - - [29/Nov/2024 01:18:40] "GET / HTTP/1.1" 200 -
+2024-11-29 01:18:40 INFO: 127.0.0.1 - - [29/Nov/2024 01:18:40] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 01:18:40 INFO: 127.0.0.1 - - [29/Nov/2024 01:18:40] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 01:18:40 INFO: 127.0.0.1 - - [29/Nov/2024 01:18:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:18:40 INFO: 127.0.0.1 - - [29/Nov/2024 01:18:40] "GET /static/assets/submarine.png HTTP/1.1" 200 -
+2024-11-29 01:18:40 INFO: 127.0.0.1 - - [29/Nov/2024 01:18:40] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 01:18:40 INFO: 127.0.0.1 - - [29/Nov/2024 01:18:40] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 01:18:40 INFO: 127.0.0.1 - - [29/Nov/2024 01:18:40] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 01:18:40 INFO: 127.0.0.1 - - [29/Nov/2024 01:18:40] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 01:18:40 INFO: 127.0.0.1 - - [29/Nov/2024 01:18:40] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:18:40 INFO: 127.0.0.1 - - [29/Nov/2024 01:18:40] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:18:40 INFO: 127.0.0.1 - - [29/Nov/2024 01:18:40] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:21:04 INFO: 127.0.0.1 - - [29/Nov/2024 01:21:04] "GET / HTTP/1.1" 200 -
+2024-11-29 01:21:04 INFO: 127.0.0.1 - - [29/Nov/2024 01:21:04] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 01:21:04 INFO: 127.0.0.1 - - [29/Nov/2024 01:21:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:21:04 INFO: 127.0.0.1 - - [29/Nov/2024 01:21:04] "GET /static/assets/safe.png HTTP/1.1" 200 -
+2024-11-29 01:21:04 INFO: 127.0.0.1 - - [29/Nov/2024 01:21:04] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 01:21:04 INFO: 127.0.0.1 - - [29/Nov/2024 01:21:04] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 01:21:04 INFO: 127.0.0.1 - - [29/Nov/2024 01:21:04] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 01:21:04 INFO: 127.0.0.1 - - [29/Nov/2024 01:21:04] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:21:04 INFO: 127.0.0.1 - - [29/Nov/2024 01:21:04] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 01:21:04 INFO: 127.0.0.1 - - [29/Nov/2024 01:21:04] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 01:21:04 INFO: 127.0.0.1 - - [29/Nov/2024 01:21:04] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:21:04 INFO: 127.0.0.1 - - [29/Nov/2024 01:21:04] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:27:10 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:10] "GET / HTTP/1.1" 200 -
+2024-11-29 01:27:10 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:27:10 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:10] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 01:27:10 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:10] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 01:27:10 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:10] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 01:27:10 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:10] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 01:27:10 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:10] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 01:27:10 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:10] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:27:10 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:10] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 01:27:10 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:10] "GET /static/assets/info.png HTTP/1.1" 200 -
+2024-11-29 01:27:10 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:10] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 01:27:10 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:10] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:27:11 INFO: 127.0.0.1 - - [29/Nov/2024 01:27:11] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "GET / HTTP/1.1" 200 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:30:47 INFO: 127.0.0.1 - - [29/Nov/2024 01:30:47] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "GET / HTTP/1.1" 200 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:31:22 INFO: 127.0.0.1 - - [29/Nov/2024 01:31:22] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:35:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:31] "GET / HTTP/1.1" 200 -
+2024-11-29 01:35:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:35:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:31] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 01:35:31 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:31] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 01:35:32 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:32] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 01:35:32 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:32] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 01:35:32 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:32] "GET /static/assets/cabin.png HTTP/1.1" 200 -
+2024-11-29 01:35:32 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:32] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:35:32 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:32] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 01:35:32 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:32] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 01:35:32 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:32] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 01:35:32 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:32] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:35:32 INFO: 127.0.0.1 - - [29/Nov/2024 01:35:32] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "GET / HTTP/1.1" 200 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 01:36:19 INFO: 127.0.0.1 - - [29/Nov/2024 01:36:19] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:35:54 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:54] "GET / HTTP/1.1" 200 -
+2024-11-29 02:35:54 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:54] "GET /static/assets/logo.png HTTP/1.1" 200 -
+2024-11-29 02:35:54 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:54] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:35:54 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 02:35:54 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:54] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:35:54 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:54] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:35:54 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:54] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:35:54 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:54] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:35:54 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:54] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:35:54 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:54] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:35:54 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:54] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:35:54 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:54] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:35:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:35:55] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "GET / HTTP/1.1" 200 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:38:36 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:36] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "GET / HTTP/1.1" 200 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:38:46 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:46] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "GET / HTTP/1.1" 200 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:38:55 INFO: 127.0.0.1 - - [29/Nov/2024 02:38:55] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "GET / HTTP/1.1" 200 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:39:09 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:09] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "GET / HTTP/1.1" 200 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:39:20 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:20] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "GET / HTTP/1.1" 200 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:39:31 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:31] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "GET / HTTP/1.1" 200 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:39:57 INFO: 127.0.0.1 - - [29/Nov/2024 02:39:57] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:40:02 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:02] "GET / HTTP/1.1" 200 -
+2024-11-29 02:40:02 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:02] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-29 02:40:02 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:02] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:02 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:02] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:03] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:03] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:03] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:40:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:03] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:03] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:03] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:03] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:03] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:40:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:03] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "GET / HTTP/1.1" 200 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:40:12 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:12] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:40:51 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:51] "GET / HTTP/1.1" 200 -
+2024-11-29 02:40:51 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 02:40:51 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:51] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:51 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:51] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:40:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:40:52] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "GET / HTTP/1.1" 200 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:41:08 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:08] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:41:39 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:39] "GET /camera HTTP/1.1" 200 -
+2024-11-29 02:41:39 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 02:41:39 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:39] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:41:39 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:39] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:41:42 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:42] "GET /camera HTTP/1.1" 200 -
+2024-11-29 02:41:42 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 02:41:42 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:42] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:41:42 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:42] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:41:42 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:42] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:41:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:52] "GET /camera HTTP/1.1" 200 -
+2024-11-29 02:41:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 02:41:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:52] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:41:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:52] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:41:52 INFO: 127.0.0.1 - - [29/Nov/2024 02:41:52] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:47:32 INFO: 127.0.0.1 - - [29/Nov/2024 02:47:32] "GET /camera HTTP/1.1" 200 -
+2024-11-29 02:47:32 INFO: 127.0.0.1 - - [29/Nov/2024 02:47:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 02:47:32 INFO: 127.0.0.1 - - [29/Nov/2024 02:47:32] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:47:32 INFO: 127.0.0.1 - - [29/Nov/2024 02:47:32] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:47:32 INFO: 127.0.0.1 - - [29/Nov/2024 02:47:32] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:48:02 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:02] "GET /camera HTTP/1.1" 200 -
+2024-11-29 02:48:02 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 02:48:02 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:02] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:48:02 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:02] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:48:02 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:02] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 02:48:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:03] "GET / HTTP/1.1" 200 -
+2024-11-29 02:48:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 02:48:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:03] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 02:48:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:03] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 02:48:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:03] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 02:48:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:03] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 02:48:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:03] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 02:48:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:03] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 02:48:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:03] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 02:48:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:03] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 02:48:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:03] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 02:48:03 INFO: 127.0.0.1 - - [29/Nov/2024 02:48:03] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 06:03:16 INFO: Server will run on IP: 0.0.0.0
+2024-11-29 06:03:16 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.18:5000
+2024-11-29 06:03:16 INFO: [33mPress CTRL+C to quit[0m
+2024-11-29 06:03:16 INFO:  * Restarting with stat
+2024-11-29 06:03:18 INFO: Server will run on IP: 0.0.0.0
+2024-11-29 06:03:18 WARNING:  * Debugger is active!
+2024-11-29 06:03:18 INFO:  * Debugger PIN: 172-800-572
+2024-11-29 06:03:27 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:27] "GET / HTTP/1.1" 200 -
+2024-11-29 06:03:27 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:27] "GET /static/assets/logo.png HTTP/1.1" 200 -
+2024-11-29 06:03:27 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:27] "GET /static/assets/safe.png HTTP/1.1" 200 -
+2024-11-29 06:03:27 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:27] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-29 06:03:27 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:27] "GET /static/assets/cabin.png HTTP/1.1" 200 -
+2024-11-29 06:03:27 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:27] "GET /static/assets/submarine.png HTTP/1.1" 200 -
+2024-11-29 06:03:27 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:27] "GET /static/assets/circus.png HTTP/1.1" 200 -
+2024-11-29 06:03:27 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:27] "GET /static/assets/cake.png HTTP/1.1" 200 -
+2024-11-29 06:03:27 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:27] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2024-11-29 06:03:27 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:27] "GET /static/assets/info.png HTTP/1.1" 200 -
+2024-11-29 06:03:27 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:27] "GET /static/assets/game.png HTTP/1.1" 200 -
+2024-11-29 06:03:27 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:27] "GET /static/assets/favicon.ico HTTP/1.1" 200 -
+2024-11-29 06:03:28 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:28] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 06:03:29 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:29] "GET /upload HTTP/1.1" 200 -
+2024-11-29 06:03:29 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 06:03:29 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:29] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 06:03:29 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:29] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 06:03:31 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:31] "GET / HTTP/1.1" 200 -
+2024-11-29 06:03:31 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 06:03:31 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:31] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:31 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:31] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:31 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:31] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:31 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:31] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:31 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:31] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:31 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:31] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 06:03:31 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:31] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:31 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:31] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:31 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:31] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:31 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:31] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 06:03:33 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:33] "GET /test_model HTTP/1.1" 200 -
+2024-11-29 06:03:33 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 06:03:33 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:33] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 06:03:33 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:33] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 06:03:33 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:33] "GET / HTTP/1.1" 200 -
+2024-11-29 06:03:33 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 06:03:33 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:33] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:34] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:34] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:34] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:34] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 06:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:34] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:34] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:34] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:34] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:34 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:34] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 06:03:35 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:35] "GET /camera HTTP/1.1" 200 -
+2024-11-29 06:03:35 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 06:03:35 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:35] "GET /video_feed HTTP/1.1" 200 -
+2024-11-29 06:03:35 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:35] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
+2024-11-29 06:03:38 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:38] "GET / HTTP/1.1" 200 -
+2024-11-29 06:03:38 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-29 06:03:38 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:38] "[36mGET /static/assets/logo.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:38 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:38] "[36mGET /static/assets/safe.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:38 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:38] "[36mGET /static/assets/submarine.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:38 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:38] "[36mGET /static/assets/cabin.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:38 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:38] "[36mGET /static/assets/cake.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:38 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:38] "[36mGET /static/assets/circus.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:38 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:38] "[36mGET /static/assets/info.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:38 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:38] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2024-11-29 06:03:38 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:38] "[36mGET /static/assets/game.png HTTP/1.1[0m" 304 -
+2024-11-29 06:03:38 INFO: 127.0.0.1 - - [29/Nov/2024 06:03:38] "[36mGET /static/assets/favicon.ico HTTP/1.1[0m" 304 -
