@@ -4,4 +4,4 @@
   publish = "public" # Optional for static files
 
 [functions]
-  runtime = "python"
+  
