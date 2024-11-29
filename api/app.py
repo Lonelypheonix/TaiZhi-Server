@@ -35,8 +35,10 @@ import time
 import cv2
 import atexit
 import logging
+from flask_lambda import FlaskLambda
 
-app = Flask(__name__, template_folder='templates')
+app = FlaskLambda(__name__, template_folder='templates')
+#app = Flask(__name__, template_folder='templates')
 app.secret_key = 'your_secret_key'  # Necessary for flashing messages
 
 app.config['ALLOWED_EXTENSIONS'] = {'csv'}
