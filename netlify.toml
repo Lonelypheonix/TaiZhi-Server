@@ -1,7 +1,7 @@
 [build]
-  base = ""
-  publish = "public"
+  command = "pip install -r requirements.txt"
   functions = "api"
+  publish = "public" # Optional for static files
 
-[[plugins]]
-  package = "@netlify/plugin-functions-install-core"
+[functions]
+  runtime = "python"
